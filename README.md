@@ -39,3 +39,24 @@ To run the script and fetch data from the API, follow these steps:
 1. Open a terminal or command prompt.
 2. Navigate to the project directory.
 3. Run the script using the following command:
+
+### To schedule periodic execution of your Python script, you can use cron jobs on your computer or server. Follow these steps:
+
+1. Open the terminal on your computer or server.
+2. Enter the following command to edit the list of cron jobs:
+```bash
+crontab -e
+```
+3.In the opened cron job editor, add the following line to the end of the file:
+```bash
+0 */12 * * * /usr/bin/python3 /path/to/your/file.py
+```
+Here:
+
+0 */12 * * * means that the task will run every 12 hours (twice a day).
+/usr/bin/python3 is the path to the Python 3 interpreter on your computer or server. Make sure this path is correct.
+/path/to/your/file.py - replace this with the full path to your Python file that you want to run periodically.
+Save the file and close the editor.
+
+Now, your Python script will automatically run every 12 hours, as specified in the cron job. Ensure that the path to your file and the Python interpreter are correctly set.
+
