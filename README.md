@@ -1,5 +1,9 @@
 # Cannabis Data Fetcher and PostgreSQL Storage
 
+<!-- public-repo-status -->
+> Status: Legacy/reference. This repository is kept public for context and examples, but it is not actively supported. Issues and pull requests are disabled unless support is reopened.
+
+
 This Python script is designed to fetch data about cannabis strains, cannabinoids, and related information from the Random Data API. It then stores this data in a PostgreSQL database. The script can be used to periodically update the database with new data from the API.
 
 ## Table of Contents
